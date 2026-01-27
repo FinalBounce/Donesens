@@ -5865,3 +5865,11 @@ blockquote {
 #w-node-_310c731f-3f89-2420-992b-cf3f090caa45-090caa36 {
   grid-area: span 2 / span 1 / span 2 / span 1;
 }
+/* Force hide Webflow badge */
+.w-webflow-badge,
+.w-webflow-badge * {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
