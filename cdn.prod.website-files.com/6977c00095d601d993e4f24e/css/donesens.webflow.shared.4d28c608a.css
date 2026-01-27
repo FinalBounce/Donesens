@@ -3183,7 +3183,10 @@ blockquote {
 }
 
 .max-width-30rem {
+  letter-spacing: .11vw;
   max-width: 33.33vw;
+  font-size: 100%;
+  font-weight: 300;
 }
 
 .title-block {
@@ -3217,6 +3220,7 @@ blockquote {
 
 .max-width-20rem {
   text-align: center;
+  letter-spacing: .14vw;
   text-transform: none;
   max-width: 50%;
   margin-top: 1rem;
@@ -4087,8 +4091,11 @@ blockquote {
 }
 
 .max-width-58rem {
-  letter-spacing: .14vw;
-  max-width: 58vw;
+  letter-spacing: .11vw;
+  max-width: 78%;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 1.89vw;
 }
 
 .circle-absolute {
@@ -4123,6 +4130,7 @@ blockquote {
 
 .heading-3, .heading-4, .heading-5 {
   text-transform: none;
+  font-size: 220%;
   font-weight: 400;
 }
 
@@ -4135,11 +4143,34 @@ blockquote {
 }
 
 .heading-6 {
+  font-size: 300%;
   font-weight: 400;
 }
 
-.paragraph, .paragraph-2, .paragraph-3, .paragraph-4, .paragraph-5, .paragraph-6, .paragraph-7 {
+.paragraph {
+  letter-spacing: .11vw;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+.paragraph-2, .paragraph-3 {
   letter-spacing: .14vw;
+}
+
+.paragraph-4 {
+  letter-spacing: .11vw;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+.paragraph-5, .paragraph-6 {
+  letter-spacing: .14vw;
+}
+
+.paragraph-7 {
+  letter-spacing: .11vw;
+  font-size: 100%;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 991px) {
@@ -4696,7 +4727,7 @@ blockquote {
   }
 
   .max-width-20rem {
-    max-width: 20rem;
+    max-width: 40rem;
   }
 
   .metrics-grid-quarter {
@@ -5063,6 +5094,7 @@ blockquote {
 
   .max-width-58rem {
     max-width: 44rem;
+    font-weight: 400;
   }
 
   .circle-absolute {
