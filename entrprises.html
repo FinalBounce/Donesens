@@ -366,23 +366,50 @@
             <div class="w-embed w-script">
               <script>
 document.addEventListener("DOMContentLoaded", () => {
+  // We handle form submissions ourselves (Formspree) and block Webflow's built‑in handler.
   const forms = document.querySelectorAll(".w-form form");
-  if (!forms.length) {
-    console.warn("No Webflow forms found");
-    return;
-  }
-  console.log("Forms found:", forms.length);
-  forms.forEach(form => {
+
+  forms.forEach((form) => {
     form.addEventListener("submit", async (e) => {
+      // Capture + stopImmediatePropagation prevents Webflow's webflow.js from also handling the submit.
       e.preventDefault();
-      const data = new FormData(form);
+      e.stopImmediatePropagation();
+
+      const wrapper = form.closest(".w-form");
+      const done = wrapper ? wrapper.querySelector(".w-form-done") : null;
+      const fail = wrapper ? wrapper.querySelector(".w-form-fail") : null;
+
+      // Hide both states before trying
+      if (done) done.style.display = "none";
+      if (fail) fail.style.display = "none";
+
+      // Let native HTML5 validation run (required / type="email" etc.)
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const formData = new FormData(form);
+
       try {
-        const response = await fetch("https://formspree.io/f/mykkkvka", {
+        const response = await fetch("https://formspree.io/f/movqepvd", {
           method: "POST",
-          body: data,
+          body: formData,
           headers: { "Accept": "application/json" }
         });
+
         if (response.ok) {
+          if (done) done.style.display = "block";
+          form.reset();
+        } else {
+          if (fail) fail.style.display = "block";
+        }
+      } catch (error) {
+        if (fail) fail.style.display = "block";
+      }
+    }, true); // capture phase
+  });
+});if (response.ok) {
           form.closest(".w-form").querySelector(".w-form-done").style.display = "block";
           form.style.display = "none";
         } else {
@@ -396,7 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
             </div>
-            <form id="wf-form-Subscribe-To-Newsletter" name="wf-form-Subscribe-To-Newsletter" data-name="Subscribe To Newsletter" method="get" class="sign-up-form-container" data-wf-page-id="6977dbae787261667a0b8793" data-wf-element-id="d2f74130-cfa6-9378-383c-8bf2dd17b6f4"><input class="sign-up-text-field w-input" maxlength="256" name="Newsletter-Email" data-name="Newsletter Email" aria-label="Enter your email" placeholder="Entrer votre Email" type="email" id="Newsletter-Email-2" required=""><input type="submit" data-wait="Please wait..." class="button-subscribe w-button" value="→"></form>
+            <form id="wf-form-Subscribe-To-Newsletter" name="wf-form-Subscribe-To-Newsletter" data-name="Subscribe To Newsletter" method="post" class="sign-up-form-container" data-wf-page-id="6977dbae787261667a0b8793" data-wf-element-id="d2f74130-cfa6-9378-383c-8bf2dd17b6f4"><input class="sign-up-text-field w-input" maxlength="256" name="Newsletter-Email" data-name="Newsletter Email" aria-label="Enter your email" placeholder="Entrer votre Email" type="email" id="Newsletter-Email-2" required=""><input type="submit" data-wait="Please wait..." class="button-subscribe w-button" value="→"></form>
             <div class="success-message-sign-up-form w-form-done">
               <div>Merci ! Votre demande a été prise en compte !</div>
             </div>
