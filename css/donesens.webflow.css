@@ -9,9 +9,9 @@
   --black-2\<deleted\|variable-e99a3d83-d809-4a12-b259-6cad688e1b34\>: #050505;
   --dark-gray-2\<deleted\|variable-73fc28ef-a8b3-b8e3-1597-31094373402a\>: #404040;
   --transparent-2\<deleted\|variable-ab209067-de98-953f-19c4-ce96dc222dd6\>: transparent;
-  --dark-gray: var(--primary);
   --border-radius-large: 63px;
   --border-radius: 48px;
+  --dark-gray: var(--primary);
   --transparent: transparent;
   --secondary2: var(--secondary);
 }
@@ -655,7 +655,7 @@ blockquote {
   display: flex;
   position: relative;
   top: 12px;
-  left: -55px;
+  left: -60px;
 }
 
 .social-icon {
@@ -1320,6 +1320,7 @@ blockquote {
 
 .font-white {
   color: var(--white);
+  text-transform: none;
 }
 
 .max-width-30rem {
@@ -1614,7 +1615,7 @@ blockquote {
 }
 
 .utility-page-wrap {
-  background-image: linear-gradient(#000000b3, #000000b3), url('../images/img_cz6y_1img_cz6y.webp');
+  background-image: linear-gradient(#000000b3, #000000b3), url('../images/742C9077-965D-4002-9DA6-04C2F9039984.PNG');
   background-position: 0 0, 50%;
   background-size: auto, cover;
   justify-content: center;
@@ -2222,8 +2223,11 @@ blockquote {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 90%;
+  width: auto;
   max-width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   position: sticky;
   top: 4rem;
@@ -2363,7 +2367,7 @@ blockquote {
 .max-width-58rem {
   letter-spacing: .07vw;
   border-radius: 0;
-  width: 100%;
+  width: auto;
   max-width: 100%;
   margin: auto;
   font-family: Lato, sans-serif;
@@ -4218,6 +4222,7 @@ blockquote {
 }
 
 .paragraph-16 {
+  width: 120%;
   font-family: Lato, sans-serif;
   font-weight: 400;
 }
@@ -4227,6 +4232,7 @@ blockquote {
 }
 
 .paragraph-17, .paragraph-18 {
+  width: 120%;
   font-family: Lato, sans-serif;
   font-weight: 400;
 }
@@ -4236,6 +4242,7 @@ blockquote {
 }
 
 .paragraph-19 {
+  width: 120%;
   font-family: Lato, sans-serif;
   font-weight: 400;
 }
@@ -4245,6 +4252,7 @@ blockquote {
 }
 
 .paragraph-20, .paragraph-21 {
+  width: 120%;
   font-family: Lato, sans-serif;
   font-weight: 400;
 }
@@ -4582,6 +4590,7 @@ blockquote {
   width: 100%;
   font-family: Lato, sans-serif;
   font-size: 1vw;
+  line-height: 1.7vw;
 }
 
 .a-propos-copy {
@@ -4986,12 +4995,29 @@ blockquote {
 .intro-a-propos2-copy {
   grid-column-gap: 63px;
   grid-row-gap: 63px;
-  color: var(--light-gray);
+  color: var(--black);
   text-align: center;
   letter-spacing: .07vw;
   text-transform: none;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: 1.7rem auto 3.6rem;
+  font-family: Lato, sans-serif;
+  font-size: 1.11vw;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.89vw;
+  display: block;
+  position: relative;
+  left: auto;
+}
+
+.intro-a-propos-2 {
   grid-column-gap: 63px;
   grid-row-gap: 63px;
+  color: var(--light-gray);
   text-align: center;
   letter-spacing: .07vw;
   text-transform: none;
@@ -5386,7 +5412,7 @@ blockquote {
     margin-left: auto;
     position: relative;
     top: 19px;
-    left: -55px;
+    left: -66px;
   }
 
   .social-icon {
@@ -5401,6 +5427,8 @@ blockquote {
     max-width: 1rem;
     min-height: 2rem;
     max-height: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .max-width-17vw {
@@ -5446,13 +5474,14 @@ blockquote {
     min-height: 6rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    font-family: Exo, sans-serif;
     font-size: 4rem;
     line-height: 6rem;
     display: flex;
   }
 
   .nav-menu {
-    background-color: var(--dark-gray);
+    background-color: #adc7ba;
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
@@ -5500,6 +5529,9 @@ blockquote {
   .subheading-flex {
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .small-icon {
@@ -5558,9 +5590,12 @@ blockquote {
   }
 
   .features-image {
+    object-fit: cover;
+    object-position: 50% 0%;
     width: 100%;
-    height: 150%;
+    height: 160%;
     max-height: 120%;
+    position: absolute;
     left: 0%;
     overflow: clip;
   }
@@ -5607,6 +5642,10 @@ blockquote {
     font-size: 6rem;
     line-height: 6.5rem;
     position: relative;
+  }
+
+  .metrics-text.empatje {
+    font-size: 3vw;
   }
 
   .metrics-text.empatje.tablette {
@@ -5680,6 +5719,10 @@ blockquote {
     max-width: 80%;
   }
 
+  .image-absolute {
+    object-position: 50% 0%;
+  }
+
   .posts-category-date-flex {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -5731,11 +5774,15 @@ blockquote {
     top: -22rem;
   }
 
+  .font-white {
+    color: var(--white);
+  }
+
   .max-width-30rem {
     max-width: 30rem;
-    font-size: 1.5vw;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 2.7vw;
+    line-height: 1.7rem;
   }
 
   .title-block {
@@ -5759,8 +5806,8 @@ blockquote {
 
   .max-width-20rem {
     max-width: 30rem;
-    font-size: 1.5vw;
-    line-height: 2.7vw;
+    font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .metrics-grid-quarter {
@@ -5848,6 +5895,10 @@ blockquote {
     height: auto;
   }
 
+  .utility-page-wrap {
+    background-image: linear-gradient(#0b0b0bb5, #0b0b0bb5), url('../images/742C9077-965D-4002-9DA6-04C2F9039984.PNG');
+  }
+
   .utility-page-content {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -5894,6 +5945,10 @@ blockquote {
     max-height: 10rem;
   }
 
+  .utilities-image.invert {
+    filter: invert();
+  }
+
   .hero-wrapper {
     min-height: auto;
     max-height: none;
@@ -5931,8 +5986,8 @@ blockquote {
 
   .about-description {
     max-width: 30rem;
-    font-size: 1.5vw;
-    line-height: 2.7vw;
+    font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .about-tab-wrapper {
@@ -6156,12 +6211,17 @@ blockquote {
 
   .max-width-58rem {
     text-align: left;
-    letter-spacing: .11vw;
-    max-width: 44rem;
+    letter-spacing: .07rem;
+    width: 150%;
+    max-width: 46rem;
     margin-top: 0;
-    font-size: 1.5vw;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 2.7vw;
+    line-height: 1.7rem;
+  }
+
+  .max-width-58rem.methode {
+    width: 130%;
   }
 
   .circle-absolute {
@@ -6182,9 +6242,14 @@ blockquote {
     font-family: Inter, sans-serif;
   }
 
-  .paragraph, .paragraph-4, .paragraph-7 {
-    font-size: 1.5vw;
-    line-height: 2.7vw;
+  .paragraph {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .paragraph-4, .paragraph-7 {
+    font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .container-copy.padding-4-5rem, .container-copy.padding-9rem, .container-copy.padding-13-5rem {
@@ -6237,7 +6302,7 @@ blockquote {
   }
 
   .text-span-2, .text-span-3, .text-span-4 {
-    font-size: 1.3vw;
+    font-size: .8rem;
   }
 
   .services-right-copy {
@@ -6254,10 +6319,15 @@ blockquote {
   }
 
   .text-span-7 {
-    font-size: 1.3vw;
+    font-size: .8rem;
   }
 
-  .text-span-8, .paragraph-9 {
+  .text-span-8 {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  .paragraph-9 {
     font-size: 1.5vw;
     line-height: 2.7vw;
   }
@@ -6293,6 +6363,9 @@ blockquote {
   }
 
   .link-block-2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
     left: 0;
   }
 
@@ -6379,16 +6452,12 @@ blockquote {
     line-height: 2.5vw;
   }
 
-  .text-span-13 {
+  .text-span-13, .text-span-13.tablet {
     padding-left: 0;
   }
 
-  .text-span-13.tablet {
-    padding-left: 80px;
-  }
-
   .heading-17.tablet {
-    padding-left: 60px;
+    padding-left: 0;
     line-height: 2rem;
   }
 
@@ -6403,8 +6472,8 @@ blockquote {
   }
 
   .text-span-14 {
-    font-size: 1.5vw;
-    line-height: 2.7vw;
+    font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .text-span-15 {
@@ -6415,8 +6484,14 @@ blockquote {
     font-weight: 500;
   }
 
-  .text-span-17, .text-span-18, .text-span-19 {
+  .text-span-17, .text-span-18 {
     font-weight: 400;
+  }
+
+  .text-span-19 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
   }
 
   .text-span-20, .text-span-21 {
@@ -6429,7 +6504,8 @@ blockquote {
   }
 
   .text-span-22 {
-    font-size: 1.5vw;
+    font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .intro-a-propos2 {
@@ -6599,8 +6675,8 @@ blockquote {
     max-width: 30rem;
     margin-left: auto;
     padding-left: 0;
-    font-size: 1.5vw;
-    line-height: 2.7vw;
+    font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .croquette-au-chevre {
@@ -6672,8 +6748,8 @@ blockquote {
   }
 
   .paragraph-9-copy {
-    font-size: 1.5vw;
-    line-height: 2.7vw;
+    font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .container-copy-copy-copy.padding-4-5rem, .container-copy-copy-copy.padding-9rem, .container-copy-copy-copy.padding-13-5rem {
@@ -7144,7 +7220,9 @@ blockquote {
   }
 
   .text-span-20-copy {
+    font-size: 1rem;
     font-weight: 500;
+    line-height: 1.7rem;
   }
 
   .max-width-30rem-copy {
@@ -7155,8 +7233,9 @@ blockquote {
   }
 
   .italic-text-4-copy {
-    font-size: 1.5vw;
+    font-size: 1rem;
     font-weight: 400;
+    line-height: 1.7rem;
   }
 
   .a-propos-copy {
@@ -7168,10 +7247,25 @@ blockquote {
     margin-bottom: 80px;
   }
 
-  .intro-a-propos, .tirtre-into-a-propos {
+  .intro-a-propos {
     max-width: 30rem;
     font-size: 1.5vw;
     line-height: 2.7vw;
+  }
+
+  .tirtre-into-a-propos {
+    max-width: 30rem;
+    font-size: 4vw;
+    line-height: 2.7vw;
+  }
+
+  .tirtre-into-a-propos.zefz {
+    padding-top: 14px;
+    font-size: 3vw;
+  }
+
+  .div-block-2-copy.tablet {
+    height: 220px;
   }
 
   .features-image-wrapper-copy {
@@ -7253,10 +7347,24 @@ blockquote {
     padding-bottom: 0;
   }
 
-  .intro-a-propos2-copy, .intro-a-propos2-copy-copy {
+  .intro-a-propos2-copy, .intro-a-propos-2 {
     max-width: 20rem;
     font-size: 1.5vw;
     line-height: 2.7vw;
+  }
+
+  .intro-a-propos-2.tablet {
+    width: 100%;
+    max-width: 200%;
+    margin-top: 3.9rem;
+    padding-bottom: 0;
+    bottom: 67px;
+  }
+
+  .intro-a-propos2-copy-copy {
+    max-width: 20rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .image-17.arbre.tablet {
@@ -7272,6 +7380,24 @@ blockquote {
     flex-flow: column;
     margin-top: 50px;
     margin-bottom: 80px;
+  }
+
+  .text-span-26 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    display: block;
+  }
+
+  .italic-text-8 {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  .italic-text-9 {
+    font-size: .8rem;
+    line-height: 1.7rem;
   }
 }
 
@@ -7425,6 +7551,10 @@ blockquote {
     max-height: 25.96rem;
   }
 
+  .features-image.tablette {
+    border-radius: 63px;
+  }
+
   .metrics-text {
     justify-content: center;
     align-items: stretch;
@@ -7500,7 +7630,7 @@ blockquote {
     max-width: 21rem;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 3vw;
+    line-height: 1.7rem;
   }
 
   .hero-title {
@@ -7661,7 +7791,7 @@ blockquote {
   }
 
   .max-width-58rem {
-    letter-spacing: .2vw;
+    letter-spacing: .07vw;
     font-size: 1rem;
     line-height: 1.7rem;
   }
@@ -7803,6 +7933,7 @@ blockquote {
 
   .text-span-20 {
     font-weight: 400;
+    line-height: 1.7vw;
   }
 
   .italic-text-4 {
@@ -7810,6 +7941,10 @@ blockquote {
     width: auto;
     font-size: .7rem;
     font-weight: 400;
+  }
+
+  .text-span-22 {
+    font-size: 1rem;
   }
 
   .intro-a-propos2 {
@@ -7981,6 +8116,10 @@ blockquote {
     width: 50%;
   }
 
+  .image-11 {
+    width: 45%;
+  }
+
   .icon-copy {
     min-width: 2rem;
     max-width: 2rem;
@@ -8034,9 +8173,22 @@ blockquote {
     font-weight: 400;
   }
 
-  .intro-a-propos, .tirtre-into-a-propos {
+  .intro-a-propos {
     font-size: 1rem;
     line-height: 1.7rem;
+  }
+
+  .tirtre-into-a-propos {
+    font-size: 3rem;
+    line-height: 1.7rem;
+  }
+
+  .tirtre-into-a-propos.zefz {
+    font-size: 2rem;
+  }
+
+  .div-block-2-copy.tablet {
+    height: 350px;
   }
 
   .features-image-wrapper-copy {
@@ -8063,7 +8215,7 @@ blockquote {
     margin-top: -190px;
   }
 
-  .intro-a-propos2-copy, .intro-a-propos2-copy-copy {
+  .intro-a-propos2-copy, .intro-a-propos-2, .intro-a-propos2-copy-copy {
     font-size: 1rem;
     line-height: 1.7rem;
   }
@@ -9022,7 +9174,7 @@ blockquote {
     margin-top: 0;
   }
 
-  .intro-a-propos2-copy, .intro-a-propos2-copy-copy {
+  .intro-a-propos2-copy, .intro-a-propos-2, .intro-a-propos2-copy-copy {
     max-width: 20rem;
     font-size: 1rem;
     line-height: 1.7rem;
