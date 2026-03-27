@@ -971,7 +971,6 @@ blockquote {
 .features-image.img.tablet {
   border-radius: var(--border-radius);
   object-position: 0% 50%;
-  margin-left: auto;
   left: -33%;
 }
 
@@ -985,16 +984,15 @@ blockquote {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   border-radius: var(--border-radius-large);
-  object-fit: cover;
+  object-fit: scale-down;
   object-position: 50% 50%;
   flex: 0 auto;
   order: 0;
   justify-content: center;
   align-self: flex-start;
   align-items: center;
-  width: auto;
-  max-width: 100%;
-  height: auto;
+  width: 340px;
+  height: 95%;
   max-height: 200%;
   display: block;
   top: 11%;
