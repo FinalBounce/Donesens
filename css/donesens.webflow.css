@@ -8398,8 +8398,10 @@ blockquote {
   }
 
   .features-image.img.tablet {
+    object-position: 50% 50%;
     margin-top: 32px;
     margin-left: 7px;
+    left: -15px;
   }
 
   .features-image.logo6 {
@@ -8841,7 +8843,11 @@ blockquote {
   }
 
   .text-span-13 {
+    vertical-align: super;
+    padding-left: 0;
+    padding-right: 10px;
     font-size: 5vw;
+    display: block;
   }
 
   .text-span-13.tablet {
