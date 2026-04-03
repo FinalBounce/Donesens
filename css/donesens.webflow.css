@@ -2695,11 +2695,11 @@ blockquote {
 }
 
 .image-2.pro3 {
-  width: 120%;
+  width: auto;
   min-width: auto;
-  max-width: none;
+  max-width: 130%;
   margin: 0 auto;
-  left: 120px;
+  left: auto;
 }
 
 .image-2.parti-3 {
