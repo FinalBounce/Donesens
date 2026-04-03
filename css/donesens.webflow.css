@@ -974,7 +974,7 @@ blockquote {
   border-radius: var(--border-radius);
   object-position: 0% 50%;
   margin-left: auto;
-  left: -33%;
+  left: 0%;
 }
 
 .features-image.logo6 {
@@ -1007,7 +1007,7 @@ blockquote {
 .features-image.tablette {
   border-radius: var(--border-radius);
   align-self: flex-start;
-  margin-top: 9px;
+  margin-top: 0;
   padding-top: 0;
 }
 
@@ -2511,7 +2511,7 @@ blockquote {
 }
 
 .image {
-  width: 70%;
+  width: 68%;
   min-width: 6.5%;
   position: static;
   left: auto;
@@ -2695,11 +2695,11 @@ blockquote {
 }
 
 .image-2.pro3 {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
+  width: 120%;
+  min-width: auto;
+  max-width: none;
   margin: 0 auto;
-  left: 60px;
+  left: 120px;
 }
 
 .image-2.parti-3 {
@@ -4873,7 +4873,7 @@ blockquote {
 
 .v.tablet {
   color: var(--light-gray);
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 .v.tablet-copy {
@@ -7029,6 +7029,33 @@ blockquote {
   line-height: 1.89vw;
 }
 
+.features-image-wrapper-ta-mere-la-chiennecopy {
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 21.7vw;
+  max-width: 21.7vw;
+  min-height: 28.8vw;
+  max-height: 28.8vw;
+  display: flex;
+  position: relative;
+}
+
+.features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation {
+  flex-flow: column;
+  flex: 0 5 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-width: 30vw;
+  max-width: 30vw;
+  min-height: 30vw;
+}
+
+.features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.icerns {
+  border-radius: 0;
+  height: 250px;
+}
+
 @media screen and (max-width: 991px) {
   body {
     font-size: .88rem;
@@ -8250,6 +8277,12 @@ blockquote {
 
   .image-2 {
     margin-left: 0;
+  }
+
+  .image-2.pro3 {
+    width: 100%;
+    min-width: 100%;
+    left: 60px;
   }
 
   .text-span-2, .text-span-3, .text-span-4 {
@@ -10530,6 +10563,33 @@ blockquote {
     line-height: 1.7rem;
     display: none;
   }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy {
+    min-width: 19.5rem;
+    max-width: 19.5rem;
+    min-height: 25.96rem;
+    max-height: 25.96rem;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.logo4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.icerns {
+    width: 40%;
+    min-width: auto;
+    max-width: none;
+    margin-bottom: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.tablette {
+    width: 100%;
+    max-width: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -12450,6 +12510,25 @@ blockquote {
     font-size: 1rem;
     line-height: 1.7rem;
   }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy {
+    min-width: 19.5rem;
+    max-width: 19.5rem;
+    min-height: 25.96rem;
+    max-height: 25.96rem;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.logo4 {
+    width: auto;
+    max-width: none;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.icerns {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 0;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -13206,6 +13285,14 @@ blockquote {
   .image-2 {
     align-self: auto;
     margin-left: 0;
+  }
+
+  .image-2.pro3 {
+    align-self: auto;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    left: auto;
   }
 
   .text-span-2 {
@@ -14911,6 +14998,37 @@ blockquote {
     font-size: 4vw;
     line-height: 6vw;
     display: none;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy {
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 19.97rem;
+    max-height: 19.97rem;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    min-height: auto;
+    max-height: none;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.logo4 {
+    width: 60%;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.icerns {
+    width: 60%;
+    margin-bottom: auto;
+  }
+
+  .features-image-wrapper-ta-mere-la-chiennecopy.flip-from-left-animation.tablette {
+    width: 100%;
+    max-width: none;
   }
 }
 
